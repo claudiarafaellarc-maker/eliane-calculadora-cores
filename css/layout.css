@@ -1,0 +1,371 @@
+/* ==========================================================================
+   LAYOUT & GRID SYSTEM
+   Centralização total, design profissional
+   ========================================================================== */
+
+/* WATERMARK */
+.watermark {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080"><defs><linearGradient id="grad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="%23b38c6b" stop-opacity="0.04"/><stop offset="1" stop-color="%2390531f" stop-opacity="0.03"/></linearGradient></defs><rect width="1080" height="1080" fill="url(%23grad)"/></svg>');
+    background-attachment: fixed;
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* APP CONTAINER */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--color-background);
+    position: relative;
+}
+
+/* HEADER */
+.header {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: var(--space-12) var(--space-4);
+    box-shadow: var(--shadow-md);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    text-align: center;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.header h1 {
+    color: var(--color-white);
+    margin: 0 0 var(--space-2) 0;
+    font-size: clamp(32px, 6vw, 52px);
+}
+
+.subtitle {
+    color: var(--color-gray-200);
+    margin: 0;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+/* TABS NAVIGATION */
+.tabs-navigation {
+    display: flex;
+    gap: var(--space-6);
+    padding: var(--space-6) var(--space-4);
+    background-color: var(--color-surface);
+    border-bottom: 2px solid var(--color-border);
+    max-width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tab-button {
+    padding: var(--space-3) var(--space-6);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    border-bottom: 3px solid transparent;
+    transition: all var(--transition-base);
+    cursor: pointer;
+    white-space: nowrap;
+    font-family: 'Archivo', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.tab-button:hover {
+    color: var(--color-primary);
+}
+
+.tab-button.active {
+    color: var(--color-secondary);
+    border-bottom-color: var(--color-secondary);
+}
+
+/* MAIN CONTENT */
+.main-content {
+    flex: 1;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: var(--space-16) var(--space-8);
+}
+
+.container-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* TAB CONTENT */
+.tab-content {
+    display: none;
+    animation: fadeIn 200ms ease-out;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* SECTIONS */
+.section-title {
+    font-family: 'Archivo', sans-serif;
+    font-size: clamp(32px, 6vw, 48px);
+    font-weight: 300;
+    margin-bottom: var(--space-10);
+    margin-top: var(--space-6);
+    text-align: center;
+    color: var(--color-primary);
+    letter-spacing: 0.5px;
+}
+
+.section-intro {
+    font-size: 17px;
+    line-height: 2;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-12);
+    text-align: center;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* CALCULATOR LAYOUT */
+.calculator-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+    align-items: start;
+}
+
+@media (max-width: 1024px) {
+    .calculator-container {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+    }
+}
+
+.calculator-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    background-color: var(--color-surface);
+    padding: var(--space-8);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-border);
+}
+
+.calculator-inputs h3 {
+    text-align: center;
+    margin-bottom: var(--space-4);
+}
+
+.calculator-preview {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+}
+
+/* FORM GROUPS */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    margin-bottom: var(--space-4);
+}
+
+.form-group label {
+    margin: 0;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* PRODUCTS GRID */
+.products-section {
+    margin-bottom: var(--space-12);
+}
+
+.products-section h3 {
+    text-align: center;
+    margin-bottom: var(--space-6);
+    padding-bottom: var(--space-4);
+    border-bottom: 2px solid var(--color-border);
+}
+
+.products-grid,
+.videos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--space-6);
+}
+
+@media (max-width: 768px) {
+    .products-grid,
+    .videos-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .products-grid,
+    .videos-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* GALLERY */
+.gallery-section {
+    margin-top: var(--space-12);
+    text-align: center;
+}
+
+.gallery-section h3 {
+    text-align: center;
+    margin-bottom: var(--space-6);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--space-6);
+    margin-top: var(--space-6);
+}
+
+/* ABOUT SECTION */
+.about-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+    align-items: center;
+    margin-bottom: var(--space-12);
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+    }
+}
+
+.about-image-wrapper {
+    text-align: center;
+}
+
+.profile-image {
+    width: 100%;
+    max-width: 350px;
+    height: 350px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.about-content {
+    text-align: center;
+}
+
+.about-content h3 {
+    text-align: center;
+    margin-bottom: var(--space-4);
+}
+
+.about-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--space-8);
+    margin-top: var(--space-12);
+}
+
+@media (max-width: 768px) {
+    .about-features {
+        grid-template-columns: 1fr;
+    }
+}
+
+.feature {
+    text-align: center;
+    padding: var(--space-8);
+    background-color: white;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-border);
+    box-shadow: var(--shadow-sm);
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.feature h4 {
+    color: var(--color-secondary);
+    margin-bottom: var(--space-2);
+}
+
+/* TUTORIAL */
+.tutorial-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.tutorial-section {
+    margin-bottom: var(--space-8);
+    padding: var(--space-6);
+    background-color: white;
+    border-radius: var(--radius-lg);
+    border-left: 4px solid var(--color-secondary);
+    box-shadow: var(--shadow-sm);
+}
+
+.tutorial-section h3 {
+    text-align: center;
+    margin-bottom: var(--space-4);
+}
+
+/* FOOTER */
+.footer {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: var(--space-8) var(--space-4);
+    margin-top: var(--space-12);
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin-bottom: var(--space-2);
+    font-size: 14px;
+}
+
+.disclaimer {
+    color: var(--color-gray-300);
+    font-size: 12px;
+}

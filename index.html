@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculadora de Cores RÓTTI MÉTODO - Studio Eliane Reis">
+    <meta name="theme-color" content="#2f1c16">
+
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+    <link rel="apple-touch-icon" href="assets/icons/favicon.png">
+
+    <title>RÓTTI MÉTODO - Calculadora de Cores | Studio Eliane Reis</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+    <div class="watermark"></div>
+
+    <div id="app" class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1>RÓTTI MÉTODO</h1>
+                <p class="subtitle">Studio Eliane Reis</p>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="tabs-navigation">
+            <button class="tab-button active" data-tab="sobre">Sobre</button>
+            <button class="tab-button" data-tab="tutorial">Tutorial</button>
+            <button class="tab-button" data-tab="calculadora">Calculadora</button>
+            <button class="tab-button" data-tab="indicacoes">Indicações</button>
+            <button class="tab-button" data-tab="videos">Vídeos</button>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- TAB: Sobre -->
+            <section id="sobre" class="tab-content active">
+                <div class="container-content">
+                    <h2 class="section-title">Conheça Eliane Reis</h2>
+
+                    <div class="about-section">
+                        <div class="about-image-wrapper">
+                            <img id="elianeProfileImage" src="assets/images/eliane-profile.jpg" alt="Eliane Reis" class="profile-image">
+                        </div>
+
+                        <div class="about-content">
+                            <h3>Especialista em Colorimetria Capilar</h3>
+                            <p class="section-intro">
+                                Eliane Reis é uma profissional renomada no universo da beleza e colorimetria capilar. Com years de experiência e dedicação à técnica, ela desenvolveu o método RÓTTI - uma abordagem inovadora e precisa para transformar cabelos.
+                            </p>
+
+                            <div class="social-links">
+                                <a href="https://www.instagram.com/studioelianereis/" target="_blank" rel="noopener noreferrer" class="social-button">
+                                    @studioelianereis
+                                </a>
+                            </div>
+
+                            <div class="about-features">
+                                <div class="feature">
+                                    <h4>Especialidade</h4>
+                                    <p>Colorimetria precisa e personalizada</p>
+                                </div>
+                                <div class="feature">
+                                    <h4>Método RÓTTI</h4>
+                                    <p>Técnica profissional desenvolvida para excelência</p>
+                                </div>
+                                <div class="feature">
+                                    <h4>Comunidade</h4>
+                                    <p>Educação e mentoria para profissionais</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-section">
+                        <h3>Galeria de Trabalhos</h3>
+                        <div class="gallery-grid" id="galleryGrid">
+                            <!-- Preenchido por JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB: Tutorial -->
+            <section id="tutorial" class="tab-content">
+                <div class="container-content">
+                    <h2 class="section-title">Como Usar a Calculadora</h2>
+
+                    <div class="tutorial-content">
+                        <div class="tutorial-section">
+                            <h3>O que é a Calculadora de Cores?</h3>
+                            <p>
+                                A Calculadora de Cores RÓTTI MÉTODO é uma ferramenta educacional que ajuda a compreender as proporções e resultados esperados ao misturar pigmentos e tonalizantes. Ela utiliza o método RÓTTI, desenvolvido pela Eliane Reis para precisão na colorimetria capilar.
+                            </p>
+                        </div>
+
+                        <div class="tutorial-section">
+                            <h3>Como Funciona?</h3>
+                            <ol class="tutorial-steps">
+                                <li><strong>Selecione o pigmento:</strong> Escolha o tom base que deseja usar (1-10, sendo 1 o mais escuro e 10 o mais claro)</li>
+                                <li><strong>Escolha o tonalizante:</strong> Selecione o tonalizante para neutralizar ou colorir o resultado</li>
+                                <li><strong>Ajuste as proporções:</strong> Defina as porcentagens de cada ingrediente</li>
+                                <li><strong>Visualize o resultado:</strong> Veja a cor resultante em tempo real</li>
+                                <li><strong>Receba recomendações:</strong> Obtenha orientações sobre tempo de ação e compatibilidade</li>
+                            </ol>
+                        </div>
+
+                        <div class="tutorial-section warning-section">
+                            <h3>Importante: O que NÃO é a Calculadora</h3>
+                            <ul class="tutorial-warnings">
+                                <li>NÃO é uma garantia de resultado exato</li>
+                                <li>NÃO substitui a experiência profissional</li>
+                                <li>NÃO considera fatores como histórico capilar, qualidade do pigmento e técnica de aplicação</li>
+                                <li>NÃO é substituto para teste de mecha</li>
+                                <li>Os resultados podem variar conforme o tipo de cabelo e pigmentação</li>
+                            </ul>
+                        </div>
+
+                        <div class="tutorial-section">
+                            <h3>Sistema de Níveis de Pigmento</h3>
+                            <p>
+                                O sistema RÓTTI utiliza uma escala de 1 a 10 para classificar os pigmentos:
+                            </p>
+                            <table class="levels-table">
+                                <tr>
+                                    <td><strong>1-2</strong></td>
+                                    <td>Pretos e castanhos muito escuros</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>3-4</strong></td>
+                                    <td>Castanhos escuros a médios</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>5-6</strong></td>
+                                    <td>Castanhos claros a louros escuros</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>7-8</strong></td>
+                                    <td>Louros médios a claros</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>9-10</strong></td>
+                                    <td>Louros muito claros a platinados</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="tutorial-section">
+                            <h3>Sobre o Método RÓTTI</h3>
+                            <p>
+                                O Método RÓTTI é uma abordagem profissional desenvolvida por Eliane Reis para garantir precisão na escolha de pigmentos e tonalizantes. O método considera:
+                            </p>
+                            <ul>
+                                <li>Proporcionalidade exata entre ingredientes</li>
+                                <li>Compatibilidade de níveis de pigmento</li>
+                                <li>Tempo de ação apropriado</li>
+                                <li>Previsibilidade do resultado final</li>
+                            </ul>
+                        </div>
+
+                        <div class="tutorial-section">
+                            <h3>Validade e Limitações</h3>
+                            <p>
+                                Esta calculadora é válida como ferramenta educacional para entender proporções. No entanto:
+                            </p>
+                            <ul>
+                                <li>Sempre fazer teste de mecha antes de aplicar em todo o cabelo</li>
+                                <li>Resultados reais variam conforme técnica de aplicação</li>
+                                <li>Qualidade e concentração dos pigmentos afetam o resultado</li>
+                                <li>Histórico capilar influencia fortemente o resultado final</li>
+                            </ul>
+                        </div>
+
+                        <div class="tutorial-section">
+                            <h3>Dicas Profissionais</h3>
+                            <ul>
+                                <li>Sempre prepare seus ingredientes antes de começar</li>
+                                <li>Use técnica correta de aplicação</li>
+                                <li>Respeite o tempo de ação recomendado</li>
+                                <li>Mantenha a qualidade dos seus produtos</li>
+                                <li>Oferça pós-coloração de qualidade</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB: Calculadora -->
+            <section id="calculadora" class="tab-content">
+                <div class="container-content">
+                    <h2 class="section-title">Calculadora de Cores</h2>
+
+                    <div class="calculator-container">
+                        <div class="calculator-inputs">
+                            <h3>Selecione seus Ingredientes</h3>
+
+                            <div class="form-group">
+                                <label>Pigmento Base</label>
+                                <select id="pigmentSelect1" class="select-input">
+                                    <option value="">Escolha um pigmento</option>
+                                </select>
+                                <input type="number" id="pigmentRatio1" class="ratio-input" min="0" max="100" value="50">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Pigmento Complementar (Opcional)</label>
+                                <select id="pigmentSelect2" class="select-input">
+                                    <option value="">Opcional</option>
+                                </select>
+                                <input type="number" id="pigmentRatio2" class="ratio-input" min="0" max="100" value="50">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Tonalizante</label>
+                                <select id="tonerSelect" class="select-input">
+                                    <option value="">Escolha um tonalizante</option>
+                                </select>
+                                <input type="number" id="tonerRatio" class="ratio-input" min="0" max="100" value="30">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Tempo de Ação (min)</label>
+                                <input type="number" id="actionTime" class="input-field" min="5" max="120" value="45">
+                            </div>
+
+                            <button id="calculateBtn" class="btn btn-primary btn-large">Calcular Resultado</button>
+                        </div>
+
+                        <div class="calculator-preview">
+                            <h3>Resultado</h3>
+                            <div class="preview-section">
+                                <canvas id="colorPreviewCanvas" class="color-preview-circle" width="200" height="200"></canvas>
+                                <div id="resultHex" class="result-value">#B8947A</div>
+                                <div id="resultRgb" class="result-label">RGB</div>
+                            </div>
+
+                            <div class="recommendation-section">
+                                <h4>Recomendação</h4>
+                                <div id="recommendationBox" class="recommendation-box">
+                                    Selecione os ingredientes para receber uma recomendação
+                                </div>
+                            </div>
+
+                            <div id="compatibilityAlert" class="alert alert-info" style="display: none;">
+                                <strong>Importante:</strong> Esta é uma orientação educacional. O resultado real pode variar dependendo de vários fatores.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB: Indicações -->
+            <section id="indicacoes" class="tab-content">
+                <div class="container-content">
+                    <h2 class="section-title">Indicações de Produtos</h2>
+                    <p class="section-intro">Conheça os produtos recomendados para excelência profissional</p>
+
+                    <div class="products-section">
+                        <h3>Pigmentos</h3>
+                        <div id="pigmentsGrid" class="products-grid"></div>
+                    </div>
+
+                    <div class="products-section">
+                        <h3>Tonalizantes</h3>
+                        <div id="tonersGrid" class="products-grid"></div>
+                    </div>
+
+                    <div class="products-section">
+                        <h3>Produtos de Cuidado</h3>
+                        <div id="careGrid" class="products-grid"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB: Vídeos -->
+            <section id="videos" class="tab-content">
+                <div class="container-content">
+                    <h2 class="section-title">Videoteca</h2>
+                    <p class="section-intro">Conteúdo educacional da Eliane Reis</p>
+                    <div id="videosGrid" class="videos-grid"></div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2026 Studio Eliane Reis - RÓTTI MÉTODO</p>
+            <p class="disclaimer">Esta ferramenta é uma orientação educacional e não substitui a experiência profissional.</p>
+        </footer>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/colorMixer.js"></script>
+    <script src="js/uiManager.js"></script>
+    <script src="js/calculator.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

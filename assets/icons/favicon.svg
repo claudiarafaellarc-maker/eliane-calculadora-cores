@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Ícone" data-name="Ícone" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Gradiente_sem_nome_3);
+      }
+
+      .cls-2 {
+        fill: #2f1c16;
+      }
+    </style>
+    <linearGradient id="Gradiente_sem_nome_3" data-name="Gradiente sem nome 3" x1="423.75" y1="608.92" x2="656.25" y2="471.08" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e8a26b"/>
+      <stop offset="1" stop-color="#fdecdd"/>
+    </linearGradient>
+  </defs>
+  <rect class="cls-2" x="-10" y="-10" width="1100" height="1100"/>
+  <path class="cls-1" d="M631.97,552.02v60.86c0,50.71-41.26,91.97-91.97,91.97s-91.97-41.26-91.97-91.97v-25.13c0-25.57,14.44-47.8,35.58-59.04l56.1,117.84h40.97l-38.76-81.41h23.2c40.18,0,72.87-32.69,72.87-72.87v-25.13c0-54.04-43.96-98-98-98s-98,43.96-98,98v60.94h6.03v-60.94c0-50.71,41.25-91.97,91.97-91.97s91.97,41.25,91.97,91.97v25.13c0,25.57-14.44,47.8-35.58,59.04l-56.1-117.84h-40.97l38.76,81.42h-23.21c-40.18,0-72.87,32.69-72.87,72.87v25.13c0,54.04,43.97,98,98,98s98-43.96,98-98v-60.86h-6.03ZM540.95,520.9l18.18,38.2h-20.08l-18.18-38.2h20.08Z"/>
+</svg>

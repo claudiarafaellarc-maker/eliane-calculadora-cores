@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Paleta_de_Cores" data-name="Paleta de Cores" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #eae4e1;
+      }
+
+      .cls-2 {
+        fill: #2f1c16;
+      }
+
+      .cls-3 {
+        fill: #663a24;
+      }
+
+      .cls-4 {
+        fill: #90531f;
+      }
+
+      .cls-5 {
+        fill: #b38c6b;
+      }
+    </style>
+  </defs>
+  <rect class="cls-2" x="-5" y="-5" width="1090" height="218"/>
+  <rect class="cls-3" x="-5" y="213" width="1090" height="218"/>
+  <rect class="cls-4" x="-5" y="431" width="1090" height="218"/>
+  <rect class="cls-5" x="-5" y="649" width="1090" height="218"/>
+  <rect class="cls-1" x="-5" y="867" width="1090" height="218"/>
+</svg>

@@ -1,0 +1,31 @@
+{
+  "name": "eliane-calculadora-cores",
+  "version": "1.0.0",
+  "description": "Calculadora de cores para colorimetria capilar - Studio Eliane Reis",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "deploy:cloudflare": "wrangler pages deploy ."
+  },
+  "keywords": [
+    "colorimetria",
+    "cabelo",
+    "pigmentos",
+    "tonalizantes",
+    "beleza",
+    "calculadora"
+  ],
+  "author": "Studio Eliane Reis",
+  "license": "proprietary",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/studioeliane/calculadora-cores"
+  },
+  "devDependencies": {},
+  "dependencies": {},
+  "notes": {
+    "vanilla": "Este projeto usa apenas Vanilla JavaScript - sem dependências externas!",
+    "fonts": "Montserrat é carregada via Google Fonts CDN",
+    "deployment": "Otimizado para Cloudflare Pages - nenhum build necessário"
+  }
+}
