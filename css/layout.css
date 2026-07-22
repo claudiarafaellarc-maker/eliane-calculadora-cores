@@ -330,7 +330,7 @@
 .about-features {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: var(--space-10);
+    gap: var(--space-14);
     margin-top: var(--space-16);
 }
 
@@ -342,21 +342,27 @@
 
 .feature {
     text-align: center;
-    padding: var(--space-10);
+    padding: var(--space-12);
     background-color: white;
     border-radius: var(--radius-lg);
     border: 1px solid var(--color-border);
     box-shadow: var(--shadow-sm);
-    min-height: 240px;
+    min-height: 280px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: var(--space-4);
 }
 
 .feature h4 {
     color: var(--color-secondary);
-    margin-bottom: var(--space-2);
+    margin: 0;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
 }
 
 /* TUTORIAL */

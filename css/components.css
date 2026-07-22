@@ -565,6 +565,12 @@ select.select-input {
     margin-bottom: var(--space-2);
 }
 
+.feature p {
+    margin: 0;
+    line-height: 1.6;
+    color: var(--color-text);
+}
+
 /* GALLERY */
 .gallery-section {
     margin-top: var(--space-12);
