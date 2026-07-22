@@ -1,263 +1,107 @@
-# 🎨 Calculadora de Cores - Studio Eliane Reis
+# RÓTTI MÉTODO - Calculadora de Cores
 
-Ferramenta web responsiva para calcular misturas de pigmentos e tonalizantes em colorimetria capilar.
+Ferramenta profissional para cálculo de cores e colorimetria capilar desenvolvida para Studio Eliane Reis.
 
-## ✨ Características
+## 📋 Características
 
-- **Calculadora Inteligente**: Misture pigmentos e tonalizantes com proporções customizáveis
-- **Preview em Tempo Real**: Visualização circular da cor resultante
-- **Recomendações da Eliane**: Dicas e avisos baseados na mistura
-- **Indicações de Produtos**: Seção com produtos recomendados com desconto
-- **Biblioteca de Vídeos**: Tutoriais e dicas de colorimetria
-- **Responsivo**: Funciona perfeitamente em desktop, tablet e mobile
-- **Sem Dependências Externas**: Vanilla JavaScript puro e leve
+✅ **Calculadora de Cores Inteligente**
+- Mistura de pigmentos e tonalizantes em tempo real
+- Visualização circular da cor resultante
+- Recomendações profissionais personalizadas
+- Compatibilidade e alertas de risco
 
-## 🚀 Quick Start
+✅ **Interface Responsiva**
+- Design mobile-first
+- Layout profissional e minimalista
+- Identidade visual RÓTTI MÉTODO
+- Navegação por abas intuitiva
 
-### 1. Abrir Localmente
+✅ **5 Seções Principais**
+1. **Sobre** - Conheça Eliane Reis e galeria de trabalhos
+2. **Tutorial** - Guia completo de como usar a calculadora
+3. **Calculadora** - Ferramenta principal de cálculo de cores
+4. **Indicações** - Produtos recomendados com códigos de desconto
+5. **Vídeos** - Conteúdo educacional em vídeo
 
-Simplesmente abra o arquivo `index.html` em um navegador moderno:
+✅ **Tecnologia**
+- HTML5 semântico
+- CSS3 com Grid/Flexbox responsivo
+- JavaScript vanilla (sem dependências)
+- Compatível com todos os navegadores modernos
 
-```bash
-# No macOS
-open index.html
+## 🎨 Branding
 
-# Ou use um servidor local (Python)
-python3 -m http.server 8000
-# Depois acesse: http://localhost:8000
-```
+**Cores RÓTTI MÉTODO:**
+- Primária: #2f1c16 (Marrom Profundo)
+- Secundária: #b38c6b (Ouro Natural)
+- Acentos: #90531f, #663a24
 
-### 2. Deploy em Cloudflare Pages
+**Tipografia:**
+- Títulos: Jazmin (Light 200)
+- Seções: Archivo (Light 300)
+- Corpo: Inter (Regular 400)
 
-#### Opção A: Git + GitHub
-
-1. Faça push do repositório para GitHub
-2. Acesse [Cloudflare Dashboard](https://dash.cloudflare.com)
-3. Vá para **Pages** → **Create a project** → **Connect to Git**
-4. Selecione o repositório
-5. Configure:
-   - **Production branch**: `main`
-   - **Build command**: deixe vazio (é conteúdo estático)
-   - **Build output directory**: `.` (raiz)
-
-#### Opção B: Direct Upload
-
-1. Comprima a pasta do projeto
-2. No Cloudflare Pages, faça upload direto
-3. Pronto! Sua aplicação estará online
-
-#### Opção C: Wrangler CLI
-
-```bash
-# Instalar Wrangler
-npm install -g wrangler
-
-# Fazer login
-wrangler login
-
-# Deploy
-wrangler pages deploy .
-```
-
-## 📁 Estrutura de Arquivos
+## 📁 Estrutura do Projeto
 
 ```
 eliane-calculadora-cores/
-├── index.html              # Página principal (estrutura HTML)
+├── index.html                 # Página principal
 ├── css/
-│   ├── reset.css          # Reset de estilos
-│   ├── theme.css          # Paleta de cores e variáveis
-│   ├── typography.css     # Tipografia (Montserrat)
-│   ├── layout.css         # Grid e layout responsivo
-│   └── components.css     # Estilos de componentes
+│   ├── reset.css             # Reset CSS
+│   ├── theme.css             # Variáveis e tema
+│   ├── typography.css        # Fontes e tipografia
+│   ├── layout.css            # Grid e layout
+│   └── components.css        # Componentes
 ├── js/
-│   ├── data.js            # Catálogo de pigmentos/tonalizantes
-│   ├── colorMixer.js      # Algoritmo de mistura RGB
-│   ├── uiManager.js       # Gerenciador de UI (abas, popups)
-│   ├── calculator.js      # Lógica principal da calculadora
-│   └── main.js            # Inicialização e utils
+│   ├── main.js              # Inicialização
+│   ├── calculator.js        # Lógica de cálculo
+│   ├── colorMixer.js        # Algoritmo de mistura
+│   ├── uiManager.js         # Gerenciamento de UI
+│   └── data.js              # Catálogo de produtos
 ├── assets/
-│   ├── images/            # Fotos, logo, etc
-│   └── icons/             # Ícones SVG
-└── README.md              # Este arquivo
+│   ├── images/              # Imagens (galeria)
+│   ├── icons/               # Ícones
+│   └── fonts/               # Fontes TTF/OTF
+└── README.md                # Este arquivo
 ```
 
-## 🎯 Como Usar
+## 🚀 Deploy
 
-### 1. Selecionar Pigmentos
-- Escolha até 2 pigmentos diferentes
-- Ajuste as proporções com os sliders (%)
-- Valores padrão: 50% cada
+Siga as instruções em **CLOUDFLARE_DEPLOYMENT.md** para fazer deploy em Cloudflare Pages.
 
-### 2. Selecionar Tonalizante
-- Escolha um tonalizante para neutralizar/colorir
-- Ajuste a proporção
-- Valor padrão: 30%
+### Quick Deploy
+1. Acesse https://dash.cloudflare.com
+2. Conecte o repositório GitHub
+3. Deploy automático em ~2 minutos
 
-### 3. Ver Resultado
-- O preview circular mostra a cor resultante
-- Veja a recomendação da Eliane
-- Leia avisos de compatibilidade
+## 🔗 Links
 
-### 4. Explorar Outras Abas
-- **Indicações**: Produtos recomendados com desconto
-- **Vídeos**: Tutoriais e dicas da Eliane
+- **Repositório GitHub**: https://github.com/claudiarafaellarc-maker/eliane-calculadora-cores
+- **Instagram**: https://www.instagram.com/studioelianereis/
+- **Email**: claudiarafaella.rc@gmail.com
 
-## 🎨 Customização
+## 📝 Notas Técnicas
 
-### Alterar Cores da Marca
+### Algoritmo de Mistura de Cores
+A calculadora usa **média ponderada RGB** para simular mistura de pigmentos:
 
-Edite `css/theme.css` e procure por `:root`:
-
-```css
-:root {
-    --color-primary: #1a1a1a;           /* Preto elegante */
-    --color-secondary: #D4A574;         /* Louro médio */
-    /* ... mais cores ... */
-}
+```
+Resultado = (Pigmento1.RGB × Peso1 + Pigmento2.RGB × Peso2) / (Peso1 + Peso2)
 ```
 
-### Adicionar/Editar Pigmentos
+### Disclaimer
+Esta ferramenta é uma **orientação educacional** e não substitui:
+- Experiência profissional
+- Teste de mecha
+- Conhecimento do técnico
+- Qualidade dos produtos
 
-Edite `js/data.js`:
+## 👩‍💼 Sobre Eliane Reis
 
-```javascript
-const PIGMENTS = [
-    {
-        id: 'p7.0',
-        name: 'Louro Médio Natural',
-        level: 7,
-        hex: '#D4A574',
-        rgb: [212, 165, 116],
-        category: 'Natural',
-        description: 'Louro médio neutro e elegante'
-    },
-    // Adicione mais...
-];
-```
-
-### Adicionar Links de Afiliados
-
-Edite `js/data.js` - seção `CARE_PRODUCTS`:
-
-```javascript
-const CARE_PRODUCTS = [
-    {
-        id: 'care-1',
-        name: 'Nome do Produto',
-        description: 'Descrição curta',
-        discount: '15% com código ELIANE',
-        link: 'https://seu-link-de-afiliado.com',
-        category: 'Hair Care',
-        icon: '🧴'
-    },
-    // Adicione mais...
-];
-```
-
-### Adicionar Vídeos
-
-Edite `js/data.js` - seção `VIDEOS`:
-
-```javascript
-const VIDEOS = [
-    {
-        id: 'video-1',
-        title: 'Título do Vídeo',
-        description: 'Descrição breve',
-        url: 'https://www.youtube.com/embed/VIDEO_ID',
-        thumbnail: 'https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg'
-    },
-    // Adicione mais...
-];
-```
-
-## 🔍 Debug
-
-Abra o console do navegador e use:
-
-```javascript
-// Ver dados carregados
-DEBUG.showData()
-
-// Ver último cálculo
-DEBUG.showCalculation()
-
-// Testar algoritmo de mistura
-DEBUG.testColorMixer()
-```
-
-## 📊 Dados Técnicos
-
-### Sistema de Níveis de Pigmento
-- **1-2**: Pretos e castanhos muito escuros
-- **3-4**: Castanhos escuros a médios
-- **5-6**: Castanhos claros a louros escuros
-- **7-8**: Louros médios a claros
-- **9-10**: Louros muito claros a platinados
-
-### Algoritmo de Mistura
-- Usa interpolação RGB ponderada
-- Não é ciência exata (sempre mostrar disclaimer)
-- Baseado em proporções de mistura
-
-## ⚠️ Disclaimer Importante
-
-Esta ferramenta é uma **orientação educacional**. Os resultados calculados são estimativas baseadas em teoria de cores RGB. Resultados reais podem variar significativamente dependendo de:
-
-- Qualidade e concentração dos pigmentos
-- Técnica de aplicação profissional
-- Tipo de cabelo e histórico de coloração
-- Tempo de ação
-- Temperatura ambiente
-
-**Sempre fazer teste de mecha antes de aplicar em todo o cabelo.**
-
-## 🛠️ Desenvolvimento
-
-### Adicionar Nova Funcionalidade
-
-1. Identifique em qual arquivo pertence (data.js, colorMixer.js, etc)
-2. Adicione a função
-3. Teste no console (DEBUG)
-4. Integre na UI (uiManager.js ou calculator.js)
-
-### Melhorias Futuras
-
-- [ ] Upload de imagem de fio de cabelo para simulação
-- [ ] Histórico de cálculos salvos
-- [ ] Exportar resultado em PDF
-- [ ] Dark mode
-- [ ] Integração com API de produtos
-- [ ] Análise de cor de foto automática
-
-## 🌐 Deployment Checklist
-
-Antes de ir ao ar:
-
-- [ ] Alterar cores para paleta exata da Eliane (RGB/CMYK)
-- [ ] Adicionar logo em `assets/images/logo.png`
-- [ ] Adicionar links de afiliados reais em `CARE_PRODUCTS`
-- [ ] Adicionar URLs reais dos vídeos em `VIDEOS`
-- [ ] Testar em mobile (iPhone, Android)
-- [ ] Testar em diferentes navegadores
-- [ ] Verificar acessibilidade (keyboard navigation)
-- [ ] Setup de domínio customizado no Cloudflare
-- [ ] Adicionar analytics (Google Analytics, etc)
-
-## 📞 Suporte
-
-Para questões sobre uso da ferramenta, contate:
-- Instagram: [@studioelianereis](https://www.instagram.com/studioelianereis/)
-- Email: Adicionar email de contato
-
-## 📄 Licença
-
-© 2026 Studio Eliane Reis. Todos os direitos reservados.
-
-Desenvolvido com ❤️ por Claude Code
+Especialista em colorimetria capilar com 30+ anos de experiência. Fundadora do método RÓTTI para excelência profissional em técnicas de coloração capilar.
 
 ---
 
-**Versão**: 1.0.0  
-**Última atualização**: 22 de julho de 2026
+**Desenvolvido com ❤️ para Studio Eliane Reis**
+
+*RÓTTI MÉTODO - Técnica da Morena Iluminada*
